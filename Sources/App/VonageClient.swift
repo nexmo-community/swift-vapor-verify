@@ -26,10 +26,16 @@ public struct Vonage {
         }
     }
     
+    /*
+     These structs are used as both the input into the server and its output. The non-optional properties
+     and properties which don't have a default value are supplied when a request is made to the server.
+     
+     The custom initialiser is used to take in the version of the struct from the request to the server,
+     enrich it with the api key and secret then use the new struct for making a call to the Vonage APIs.
+     */
     public struct RequestVerificationBody: Content {
         let number: String
         let brand: String = "SwiftVerify"
-        let workflowID: Int = 6
         var apiKey: String?
         var apiSecret: String?
         
@@ -42,7 +48,6 @@ public struct Vonage {
         private enum CodingKeys: String, CodingKey {
             case number
             case brand
-            case workflowID = "workflow_id"
             case apiKey = "api_key"
             case apiSecret = "api_secret"
         }
