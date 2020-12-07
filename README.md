@@ -2,7 +2,7 @@
 
 <img src="https://developer.nexmo.com/assets/images/Vonage_Nexmo.svg" height="48px" alt="Nexmo is now known as Vonage" />
 
-This is a Swift project that uses [Vapor](vapor.codes) to create a HTTP server for the [Vonage Verify API](https://developer.nexmo.com/verify/overview). This allows you to add Two-Factor Authentication to your projects. This blog shows the project in use with an iOS application to allow you to test the server.
+This is a Swift project that uses [Vapor](vapor.codes) to create a HTTP server for the [Vonage Verify API](https://developer.nexmo.com/verify/overview). This allows you to add Two-Factor Authentication to your projects. This [blog](https://learn.vonage.com/blog/2020/11/24/how-to-add-two-factor-authentication-with-swift-and-vapor) shows the project in use with an iOS application to allow you to test the server.
 
 ## Welcome to Vonage
 
